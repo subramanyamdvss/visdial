@@ -31,6 +31,7 @@ cmd:option('-lrDecayRate', 0.9997592083, 'Decay for learning rate')
 cmd:option('-minLRate', 5e-5, 'Minimum learning rate')
 cmd:option('-gpuid', 0, 'GPU id to use')
 cmd:option('-backend', 'cudnn', 'nn|cudnn')
+cmd:option('-active',true,'use active learning')
 
 local opts = cmd:parse(arg);
 
